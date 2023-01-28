@@ -88,3 +88,18 @@ html, body {
 #timer-amount {
     align-content: flex-end;
 }
+
+.control-icon {
+    fill: var(--main-light);
+}
+
+#controls-row {
+    margin-top: 1rem;
+    gap: 3rem;
+}
+
+#controls-row object {
+    width: 5vw;
+    height: 5vw;
+    color: var(--main-light);
+}
