@@ -10,13 +10,23 @@
 </head>
 <body>
     <div id="root" class="flex-row">
+        <!-- Timer Container -->
         <div id="timer-container" class="flex-center-child main-container">
-            <div class="placement-box"></div>
+            <div class="flex-col">
+                <div id="timer-amount" class="flex-row">
+                    <span class="timer-text-small">$</span><span id="timer-text-dollars" class="timer-text-large">00.</span><span id="timer-text-cents" class="timer-text-small">99</span>
+                </div>
+                <div class="flex-row"></div>
+            </div>
         </div>
+
         <div class="flex-col">
+            <!-- Rate Container -->
             <div id="rate-container" class="flex-center-child main-container">
                 <div class="placement-box"></div>
             </div>
+
+            <!-- Credit Container -->
             <div id="credit-container" class="flex-center-child main-container">
                 <div class="placement-box"></div>
             </div>

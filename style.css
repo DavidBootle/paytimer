@@ -27,11 +27,13 @@ html, body {
 .flex-row {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .flex-col {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .flex-center-child {
@@ -48,6 +50,7 @@ html, body {
 
 /* SPECIFIC CLASSES */
 #timer-container {
+    color: var(--main-light);
     background-color: var(--main-accent-1);
     width: calc(60vw - 3rem);
     height: calc(100vh - 4rem);
@@ -70,4 +73,18 @@ html, body {
 
 .main-container {
     border-radius: 1rem;
+}
+
+.timer-text-small {
+    font-size: 10.6vw;
+    line-height: 15vw;
+}
+
+.timer-text-large {
+    font-size: 13.2vw;
+    line-height: 15vw;  
+}
+
+#timer-amount {
+    align-content: flex-end;
 }
