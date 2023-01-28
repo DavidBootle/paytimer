@@ -34,6 +34,18 @@ html, body {
     flex-direction: column;
 }
 
+.flex-center-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placement-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
 /* SPECIFIC CLASSES */
 #timer-container {
     background-color: var(--main-accent-1);
@@ -54,4 +66,8 @@ html, body {
     width: calc(40vw - 3rem);
     height: calc(20vh - 3rem);
     margin: 1rem 2rem 2rem 1rem;
+}
+
+.main-container {
+    border-radius: 1rem;
 }
