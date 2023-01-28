@@ -1,7 +1,57 @@
+@font-face {
+    font-family: "Hiragino Mincho ProN";
+    src: url("/assets/fonts/Hiragino Mincho ProN W3.otf");
+}
+
 :root {
     --main-dark: #333138;
     --main-accent-1: #347FC4;
     --main-light: #EBEBEB;
     --main-accent-2: #EB8258;
     --main-accent-3: #6A8D73;
+}
+
+* {
+    font-family: "Hiragino Mincho ProN", "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--main-light);
+    height: 100vh;
+}
+
+/* UTILITY CLASSES */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SPECIFIC CLASSES */
+#timer-container {
+    background-color: var(--main-accent-1);
+    width: calc(60vw - 3rem);
+    height: calc(100vh - 4rem);
+    margin: 2rem 1rem 2rem 2rem;
+}
+
+#rate-container {
+    background-color: var(--main-accent-3);
+    width: calc(40vw - 3rem);
+    height: calc(80vh - 3rem);
+    margin: 2rem 2rem 1rem 1rem;
+}
+
+#credit-container {
+    background-color: var(--main-dark);
+    width: calc(40vw - 3rem);
+    height: calc(20vh - 3rem);
+    margin: 1rem 2rem 2rem 1rem;
 }
