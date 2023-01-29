@@ -77,13 +77,11 @@ html, body {
 }
 
 .timer-text-small {
-    font-size: 10.6vw;
-    /* line-height: 15vw; */
+    font-size: 7.9vw;
 }
 
 .timer-text-large {
-    font-size: 13.2vw;
-    /* line-height: 15vw; */
+    font-size: 9.3vw;
 }
 
 #timer-amount {
@@ -96,6 +94,10 @@ html, body {
 
 .control-icon:hover {
     filter: brightness(80%);
+}
+
+.control-icon:active {
+    filter: brightness(50%);
 }
 
 #controls-row {
