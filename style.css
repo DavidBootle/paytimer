@@ -7,6 +7,7 @@
     --main-dark: #333138;
     --main-accent-1: #347FC4;
     --main-light: #EBEBEB;
+    --main-light-hover: #999999;
     --main-accent-2: #EB8258;
     --main-accent-3: #6A8D73;
 }
@@ -77,20 +78,24 @@ html, body {
 
 .timer-text-small {
     font-size: 10.6vw;
-    line-height: 15vw;
+    /* line-height: 15vw; */
 }
 
 .timer-text-large {
     font-size: 13.2vw;
-    line-height: 15vw;  
+    /* line-height: 15vw; */
 }
 
 #timer-amount {
-    align-content: flex-end;
+    vertical-align: text-bottom;
 }
 
 .control-icon {
     fill: var(--main-light);
+}
+
+.control-icon:hover {
+    filter: brightness(80%);
 }
 
 #controls-row {
@@ -98,7 +103,7 @@ html, body {
     gap: 3rem;
 }
 
-#controls-row object {
+#controls-row svg {
     width: 5vw;
     height: 5vw;
     color: var(--main-light);
