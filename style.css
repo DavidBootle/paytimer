@@ -133,6 +133,10 @@ html, body {
     color: var(--main-light);
 }
 
+#rate-amount-input:focus::placeholder {
+    color: lightgray;
+}
+
 #rate-amount-input, #hidden, .rate-text-large {
     font-size: 7vw;
 }
@@ -147,6 +151,7 @@ html, body {
     fill: var(--main-light);
     width: 3.8vh;
     height: 3.8vh;
+    overflow: visible;
 }
 
 .credit-link svg:hover {
@@ -160,4 +165,102 @@ html, body {
 #links-container {
     gap: 1vw;
     margin-top: 1vh;
+}
+
+/** MOBILE STYLES **/
+@media (max-aspect-ratio: 1/1) {
+    /** These styles will only be applied if the aspect ratio is under 1/1, or in other words, if the screen is
+    portrait oriented **/
+
+    /* UTILITY STYLES */
+    .flex-row-m {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .flex-col-m {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* CONTAINERS */
+    #timer-container {
+        width: 100vw;
+        height: 70vh;
+        margin: 0;
+    }
+    
+    #rate-container {
+        width: 100vw;
+        height: 20vh;
+        margin: 0;
+    }
+    
+    #credit-container {
+        width: 100vw;
+        height: 10vh;
+        margin: 0;
+    }
+    
+    .main-container {
+        border-radius: 0;
+    }
+
+    /* TIMER SPECIFIC STYLES */
+    .timer-text-small {
+        font-size: 20vw;
+    }
+
+    .timer-text-large {
+        font-size: 24vw;
+    }
+
+    #controls-row {
+        margin-top: 10vh;
+        gap: 30vw;
+    }
+
+    #controls-row svg {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    /* RATE SPECIFIC STYLES */
+    .rate-text-small {
+        font-size: 5vw;
+    }
+
+    #rate-amount-input {
+        max-width: 40vw;
+        min-width: 6vw;
+    }
+
+    #rate-amount-input, #hidden, .rate-text-large {
+        font-size: 10vw;
+    }
+
+    .rate-text-large {
+        margin: 0 2vw 0 2vw;
+    }
+
+    /* CREDIT BOX SPECIFIC STYLES */
+    .credit-link svg {
+        width: 3vh;
+        height: 3vh;
+    }
+
+    .credit-link svg:hover {
+        filter: brightness(80%);
+    }
+
+    #copyright-text {
+        font-size: 2vh;
+    }
+
+    #links-container {
+        gap: 5vw;
+        margin-top: 1vh;
+    }
 }
