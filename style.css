@@ -53,29 +53,29 @@ html, body {
 #timer-container {
     color: var(--main-light);
     background-color: var(--main-accent-1);
-    width: calc(60vw - 3rem);
-    height: calc(100vh - 4rem);
-    margin: 2rem 1rem 2rem 2rem;
+    width: calc(60vw - 3.17vw);
+    height: calc(100vh - 8.18vh);
+    margin: 4.09vh 1.06vw 4.09vh 2.12vw;
 }
 
 #rate-container {
     color: var(--main-light);
     background-color: var(--main-accent-3);
-    width: calc(40vw - 3rem);
-    height: calc(80vh - 3rem);
-    margin: 2rem 2rem 1rem 1rem;
+    width: calc(40vw - 3.17vw);
+    height: calc(80vh - 6.12vh);
+    margin: 4.09vh 2.12vw 2.05vh 1.06vw;
 }
 
 #credit-container {
     color: var(--main-light);
     background-color: var(--main-dark);
-    width: calc(40vw - 3rem);
-    height: calc(20vh - 3rem);
-    margin: 1rem 2rem 2rem 1rem;
+    width: calc(40vw - 3.17vw);
+    height: calc(20vh - 6.12vh);
+    margin: 2.05vh 2.12vw 4.09vh 1.06vw;
 }
 
 .main-container {
-    border-radius: 1rem;
+    border-radius: 1.06vw;
 }
 
 /* TIMER SPECIFIC STYLES */
@@ -104,8 +104,8 @@ html, body {
 }
 
 #controls-row {
-    margin-top: 1rem;
-    gap: 3rem;
+    margin-top: 2.05vh;
+    gap: 3.17vw;
 }
 
 #controls-row svg {
@@ -135,4 +135,29 @@ html, body {
 
 #rate-amount-input, #hidden, .rate-text-large {
     font-size: 7vw;
+}
+
+/* CREDIT BOX SPECIFIC STYLES */
+.credit-link {
+    outline: none;
+    text-decoration: none;
+}
+
+.credit-link svg {
+    fill: var(--main-light);
+    width: 3.8vh;
+    height: 3.8vh;
+}
+
+.credit-link svg:hover {
+    filter: brightness(80%);
+}
+
+#copyright-text {
+    font-size: 2vh;
+}
+
+#links-container {
+    gap: 1vw;
+    margin-top: 1vh;
 }
