@@ -30,7 +30,11 @@
         <div class="flex-col">
             <!-- Rate Container -->
             <div id="rate-container" class="flex-center-child main-container">
-                <div class="placement-box"></div>
+                <div class="flex-col">
+                    <div class="rate-text-small">I make</div>
+                    <div class="rate-text-large">$<input id="rate-amount-input" type="text" placeholder="0"/></div>
+                    <div class="rate-text-small">per hour</div>
+                </div>
             </div>
 
             <!-- Credit Container -->
@@ -39,6 +43,8 @@
             </div>
         </div>
     </div>
+    <!-- This only exists to resize the rate input element, see js-->
+    <span id="hidden" style="display: none;"></span>
     <script src="main.js"></script>
 </body>
 </html>
