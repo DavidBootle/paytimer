@@ -67,6 +67,7 @@ html, body {
 }
 
 #credit-container {
+    color: var(--main-light);
     background-color: var(--main-dark);
     width: calc(40vw - 3rem);
     height: calc(20vh - 3rem);
@@ -115,7 +116,7 @@ html, body {
 
 /* RATE SPECIFIC STYLES */
 .rate-text-small {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 #rate-amount-input {
@@ -133,5 +134,5 @@ html, body {
 }
 
 #rate-amount-input, #hidden, .rate-text-large {
-    font-size: 4.6vw;
+    font-size: 7vw;
 }
