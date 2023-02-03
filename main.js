@@ -97,10 +97,10 @@ function loadLocalStorage() {
 /**
  * Update timer. Calculates the amount that should be shown on the timer and displays it.
  * Assumes that data has already been loaded.
+ * @optional
+ * @param overrideRestrictions - Set to true to ignore automatic default value returns.
  */
 function updateTimer() {
-    if (startTimes.length == 0 ) { return; } // do not update timer if there is no start time, leave as default ($0.00)
-    
     let currentTime;
     if (timerActive) {
         currentTime = Date.now() - startTimes[startTimes.length - 1]; // get number of milliseconds since current start time
@@ -108,7 +108,10 @@ function updateTimer() {
     } else {
         currentTime = previousElapsedTime; // set timer to previously loaded time
     }
+    let seconds = (Math.floor(currentTime / 1000) % 60).toString().padStart(2, '0');
+    let minutes = (Math.floor(currentTime / 60000) % 60).toString().padStart(2, '0');
     currentTime /= 3600000; // get number of hours
+    let hours = (Math.floor(currentTime)).toString().padStart(2, '0');
 
     let currentPay = currentTime * payRate; // get amount of money on the timer
     currentPay = currentPay.toFixed(2);
@@ -117,6 +120,9 @@ function updateTimer() {
     // update timer text
     $("#timer-text-dollars").text(payString[0]);
     $("#timer-text-cents").text(payString[1]);
+
+    // update time readout
+    $("#time-readout-text").text(`${hours}:${minutes}:${seconds}`);
 }
 
 /**
