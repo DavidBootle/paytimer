@@ -87,6 +87,12 @@ html, body {
     font-size: 9.3vw;
 }
 
+#time-readout-text {
+    font-size: 2vw;
+    margin-top : -1.5vh;
+    margin-bottom: -1vh;
+}
+
 #timer-amount {
     vertical-align: text-bottom;
 }
@@ -215,6 +221,12 @@ html, body {
 
     .timer-text-large {
         font-size: 24vw;
+    }
+
+    #time-readout-text {
+        font-size: 8vw;
+        margin-top : -1vh;
+        margin-bottom: -8vh;
     }
 
     #controls-row {
