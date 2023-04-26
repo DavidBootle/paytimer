@@ -3,9 +3,6 @@
     <defs>
         <style>
         .c{fill:#eea243;}.d{fill:#8eb9e1;}.e{fill:#000;}
-        @media (prefers-color-scheme: dark) {
-            .e{fill:#FFF;}
-        }
         </style>
     </defs>
     <g id="a">
